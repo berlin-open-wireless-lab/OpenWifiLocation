@@ -1,11 +1,12 @@
 from openwifi.jobserver.tasks import get_jsonubus_from_uuid
 import requests
 
-from ApiKey import *
+from .ApiKey import *
 from cornice import Service
+import json
 
 
-location = Service(name='users',
+location = Service(name='location',
                    path='/node/{UUID}/loc',
                    description='Get location data.')
 
