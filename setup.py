@@ -8,6 +8,7 @@ setup(
     install_requires=["OpenWifi"],
     entry_points="""
     [OpenWifi.plugin]
+    addPluginRoutes=OpenWifiLocation:addPluginRoutes
     """,
     packages=find_packages(),
     include_package_data=True,
